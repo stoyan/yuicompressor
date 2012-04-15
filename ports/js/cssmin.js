@@ -184,8 +184,8 @@ if ( typeof module === "object" && typeof exports === "object" && module.exports
     exports.cssmin = cssmin;
 }
 
-//web browser
-else if ( typeof window === "object" ) {
+//web browser and rhino
+else {
     if ( typeof YAHOO !== "object" ) {
         YAHOO = { compressor: { cssmin:cssmin } };
     }
